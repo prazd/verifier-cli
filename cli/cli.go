@@ -1,14 +1,13 @@
-package main
+package cli
 
 import (
-	"github.com/c-bata/go-prompt"
-	"github.com/prazd/go-cli/completer"
-	"github.com/prazd/go-cli/executor"
 	"fmt"
+	"github.com/c-bata/go-prompt"
+	"github.com/prazd/go-cli/executor"
+	"github.com/prazd/go-cli/completer"
 )
 
-
-func main() {
+func CLI(){
 	fmt.Println("------------Plasma Verifier----------")
 	p := prompt.New(
 		executor.Executor,
@@ -18,3 +17,5 @@ func main() {
 	)
 	p.Run()
 }
+
+

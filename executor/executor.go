@@ -6,15 +6,13 @@ import (
 	"os"
 )
 
-var mainOptionsArg = []string{"get"}
-
-func Executor(s string){
-	if  s == "exit" {
+func Executor(userText string){
+	if  userText == "exit" {
 		fmt.Println("Bye!")
 		os.Exit(0)
 		return
 	}
-	args := strings.Split(s," ")
+	args := strings.Split(userText," ")
 	if len(args) > 2 {
 		switch args[0] {
 		case "get":
@@ -33,7 +31,7 @@ func Executor(s string){
 				}
 			case "events", "e":
 				if len(args) == 3 {
-					fmt.Println("events ...")
+					fmt.Println("Events ...")
 				}
 			}
 		}
