@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/c-bata/go-prompt"
-	"../completer"
-	"../executor"
+	"github.com/prazd/go-cli/completer"
+	"github.com/prazd/go-cli/executor"
 	"fmt"
 )
 

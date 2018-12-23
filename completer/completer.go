@@ -3,7 +3,7 @@ package completer
 import (
 	"github.com/c-bata/go-prompt"
 	"strings"
-	"../options"
+	"github.com/prazd/go-cli/options"
 )
 
 func Completer(d prompt.Document) []prompt.Suggest{
